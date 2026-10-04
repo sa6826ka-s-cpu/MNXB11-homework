@@ -1,0 +1,72 @@
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ cat ./run_in_container_calculatePI.sh
+[?2004l#!/bin/sh
+# This script runs the calculatePI.sh script using the container `mnxb11_al9.latest.sif` with minimum required parameters
+# -B mounts the project directory inside the container so that is visible also inside the container
+apptainer run -B /projects:/projects /projects/hep/fs11/share/mnxb11/containers/mnxb11_al9.latest.sif ./calculatePI_setup.sh
+
+
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ cat calculatepi.sbatch-yourname.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.shs.sha.shm.shu.she.shl.shk.sha.sht.sht.sha.shy.sha.sh
+[?2004l#!/bin/sh
+
+#SBATCH -J "MNXB11 Pi homework"
+#SBATCH --time=00:07:16
+#SBATCH -A hep2023-1-6
+#SBATCH --mem=26559228K
+
+# Launch the calculatePI.sh application script using the container script
+run_in_container_calculatePI.sh
+ßkskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ cat calculatepi.sbatch-samuelkattaya.sh[1P calculatepi.sbatch-samuelkattaya.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P calculatepi.sbatch-samuelkattaya.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P calculatepi.sbatch-samuelkattaya.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs calculatepi.sbatch-samuelkattaya.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb calculatepi.sbatch-samuelkattaya.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca calculatepi.sbatch-samuelkattaya.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct calculatepi.sbatch-samuelkattaya.shh calculatepi.sbatch-samuelkattaya.sh[4Pcat ./run_in_container_calculatePI.sh[1P ./run_in_container_calculatePI.sh[1P ./run_in_container_calculatePI.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P ./run_in_container_calculatePI.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs ./run_in_container_calculatePI.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb ./run_in_container_calculatePI.sha ./run_in_container_calculatePI.sht ./run_in_container_calculatePI.shc ./run_in_container_calculatePI.shh ./run_in_container_calculatePI.shh calculatepi.sbatch-samuelkattaya.sh[1P calculatepi.sbatch-samuelkattaya.sh[1P calculatepi.sbatch-samuelkattaya.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct calculatepi.sbatch-samuelkattaya.shc calculatepi.sbatch-samuelkattaya.shh calculatepi.sbatch-samuelkattaya.sh
+[?2004lSubmitted batch job 3785144
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ squeue -u $USER
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           3785144       hep MNXB11 P skattaya  R       0:57      1 cx12
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ squeue -u $USER
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           3785144       hep MNXB11 P skattaya  R       4:32      1 cx12
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ squeue -u $USERbatch calculatepi.sbatch-samuelkattaya.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-calculatepi.sbatch-samuelkattaya.sh-calculatepi.sbatch-samuelkattaya.shjcalculatepi.sbatch-samuelkattaya.shocalculatepi.sbatch-samuelkattaya.shbcalculatepi.sbatch-samuelkattaya.sh-calculatepi.sbatch-samuelkattaya.shncalculatepi.sbatch-samuelkattaya.shacalculatepi.sbatch-samuelkattaya.shmcalculatepi.sbatch-samuelkattaya.shecalculatepi.sbatch-samuelkattaya.sh calculatepi.sbatch-samuelkattaya.sh[1Pcalculatepi.sbatch-samuelkattaya.sh=calculatepi.sbatch-samuelkattaya.sh calculatepi.sbatch-samuelkattaya.shWcalculatepi.sbatch-samuelkattaya.sh [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pcalculatepi.sbatch-samuelkattaya.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pcalculatepi.sbatch-samuelkattaya.shWcalculatepi.sbatch-samuelkattaya.shAcalculatepi.sbatch-samuelkattaya.sh [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CTcalculatepi.sbatch-samuelkattaya.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CEcalculatepi.sbatch-samuelkattaya.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CDcalculatepi.sbatch-samuelkattaya.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C calculatepi.sbatch-samuelkattaya.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CSTED calculatepi.sbatch-samuelkattaya.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" calculatepi.sbatch-samuelkattaya.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"WASTED" calculatepi.sbatch-samuelkattaya.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lSubmitted batch job 3785262
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ sbatch --job-name="WASTED" calculatepi.sbatch-samuelkattaya.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cqueue -u $USER[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           3785262       hep   WASTED skattaya PD       0:00      1 (Priority)
+           3785144       hep MNXB11 P skattaya  R       6:07      1 cx12
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ squeue -u $USERbatch --job-name="WASTED" calculatepi.sbatch-samuelkattaya.sh
+[?2004lSubmitted batch job 3785263
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ sbatch --job-name="WASTED" calculatepi.sbatch-samuelkattaya.sh
+[?2004lSubmitted batch job 3785264
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ sbatch --job-name="WASTED" calculatepi.sbatch-samuelkattaya.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cqueue -u $USER[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           3785264       hep   WASTED skattaya PD       0:00      1 (Priority)
+           3785263       hep   WASTED skattaya PD       0:00      1 (Priority)
+           3785144       hep MNXB11 P skattaya  R       6:17      1 cx12
+           3785262       hep   WASTED skattaya  R       0:09      1 cx12
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ squeue -u $USER
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           3785264       hep   WASTED skattaya PD       0:00      1 (Priority)
+           3785263       hep   WASTED skattaya PD       0:00      1 (Priority)
+           3785144       hep MNXB11 P skattaya  R       6:24      1 cx12
+           3785262       hep   WASTED skattaya  R       0:16      1 cx12
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ squeue -u $USERbatch --job-name="WASTED" calculatepi.sbatch-samuelkattaya.sh[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K scancel 3785264
+[?2004lsbatch: error: This does not look like a batch script.  The first
+sbatch: error: line must start with #! followed by the path to an interpreter.
+sbatch: error: For instance: #!/bin/sh
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ sbatch scancel 3785264[1P[1P[1P[1P[1P[1P[1P
+[?2004lkskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ scancel 3785264[7@batch s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pqueue -u $USER
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           3785263       hep   WASTED skattaya  R       0:21      1 cx12
+           3785262       hep   WASTED skattaya  R       1:21      1 cx12
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ squeue -u $USERcancel 3785264[K[K[K[K[K[K[Kscreen[K[K[K[K[K[K[K 3785263 3785262
+[?2004lkskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ scancel 3785263 3785262[8Pqueue -u $USER
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           3785263       hep   WASTED skattaya CG       3:07      1 cx12
+           3785262       hep   WASTED skattaya CG       4:07      1 cx12
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ squeue -u $USERcancel 3785263 3785262[K[K[K[K[K[K[K[K
+[?2004lkskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ scancel 3785263queue -u $USERcancel 3785263[K2
+[?2004lkskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ scancel 37852623queue -u $USER
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+kskattaya@cosmos-pkf:~/git/MNXB11-homework/homework3/calculatePI/scripts\[?2004h[skattaya@cosmos-pkf scripts]$ exit
+[?2004lexit
